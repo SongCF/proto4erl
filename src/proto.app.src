@@ -1,0 +1,12 @@
+{application, proto,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { proto_app, []}},
+  {env, []}
+ ]}.
