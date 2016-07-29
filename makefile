@@ -8,9 +8,7 @@ endif
 
 
 all:
-	$(REBAR) compile
 	bash scripts/proto_compile.sh
-	$(REBAR) compile
 
 
 # 清楚
@@ -22,4 +20,4 @@ test:
 	$(REBAR) eunit
 
 
-.PHONY:deps test g
+.PHONY:test g
