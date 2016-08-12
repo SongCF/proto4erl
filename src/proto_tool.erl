@@ -42,9 +42,9 @@ run(SrcPath, DstPath)->
         "-module(packet_x).\n",
         "-compile([export_all]).\n\n",
         Cmd2Name,
-        "cmd_to_name(Cmd) -> throw(bad_pkt_cmd).\n\n",
+        "cmd_to_name(_Cmd) -> throw(bad_pkt_cmd).\n\n",
         Name2Cmd,
-        "name_to_cmd(Name) -> throw(bad_pkt_name).\n\n"
+        "name_to_cmd(_Name) -> throw(bad_pkt_name).\n\n"
         ]),
     ok = file:write_file(CmdNameFile, list_to_binary(CmdNameData)),
 
