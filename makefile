@@ -20,4 +20,4 @@ test:
 	$(REBAR) eunit
 
 
-.PHONY:test g
+.PHONY:test
